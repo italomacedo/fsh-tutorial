@@ -8,18 +8,18 @@
       "resource" : {
         "resourceType" : "Provenance",
         "id" : "h1-1",
-        "target" : [ { "reference" : "StructureDefinition/myObservation" } ],
-        "occurredDateTime" : "2015-11-30",
-        "recorded" : "2020-01-01T00:00:00.000Z",
+        "target" : [ { "reference" : "StructureDefinition/Paciente" } ],
+        "occurredDateTime" : "2023-04-19T13:13:47-03:00",
+        "recorded" : "2023-04-19T13:13:50-03:00",
         "reason" : [
           {
-            "text" : "Add \"conductible\" property to ActRelationshipType and ParticipationType codes.for ContextConduction RIM Change. And create Concept domain CodeSystem and ValueSet for ContextConductionStyle"
+            "text" : "Adicionado Perfil de Paciente"
           }
         ],
         "activity" : {
           "coding" : [{
             "system" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
-            "code" : "UPDATE"
+            "code" : "INSERT"
           }]
         },
         "agent" : [
@@ -30,7 +30,7 @@
                 "code" : "author"
               }]
             },
-            "who" : { "display" : "Rob Hausam" }
+            "who" : { "display" : "Italo Macêdo" }
           },
           {
             "type" : {
@@ -39,7 +39,48 @@
                 "code" : "verifier"
               }]
             },
-            "who" : { "display" : "Vocab" }
+            "who" : { "display" : "Sintaxe" }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "http://somewhere.org/fhir/uv/myig/Provenance/h1-2",
+      "resource" : {
+        "resourceType" : "Provenance",
+        "id" : "h1-1",
+        "target" : [ { "reference" : "Patient/exemplo" } ],
+        "occurredDateTime" : "2023-04-19T13:13:47-03:00",
+        "recorded" : "2023-04-19T13:13:50-03:00",
+        "reason" : [
+          {
+            "text" : "Adicionado Exemplo de Paciente"
+          }
+        ],
+        "activity" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+            "code" : "INSERT"
+          }]
+        },
+        "agent" : [
+          {
+            "type" : {
+              "coding" : [{
+                "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                "code" : "author"
+              }]
+            },
+            "who" : { "display" : "Italo Macêdo" }
+          },
+          {
+            "type" : {
+              "coding" : [{
+                "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                "code" : "verifier"
+              }]
+            },
+            "who" : { "display" : "Exemplo" }
           }
         ]
       }

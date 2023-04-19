@@ -13,6 +13,8 @@ RUN npm update
 
 RUN npm install -g fsh-sushi
 
+RUN echo && sushi --version
+
 RUN mkdir -p /root/.fhir/packages
 
 COPY . /app

@@ -50,90 +50,16 @@
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/mypatient"/>
+        <reference value="StructureDefinition/Paciente"/>
       </reference>
-      <description value="Overriding description because we can"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/MyLogical"/>
-      </reference>
-      <description value="Logical Model"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Library/example-sql"/>
-      </reference>
-      <description value="A test example"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Library/example-image"/>
-      </reference>
-      <description value="A test image example"/>
-    </resource>
-<!--<resource>
-<reference>
-<reference value="MyLogicalModel/AS"/>
-</reference>
-</resource> -->
-    <resource>
-      <reference>
-        <reference value="Patient/example"/>
-      </reference>
-      <name value="Simple patient example"/>
-      <description value="A simple example showing how examples are defined and referenced"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example"/>
-      </reference>
-      <name value="Observation patient example"/>
-      <description value="Example showing slicing"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Binary/example"/>
-      </reference>
-      <name value="Example binary"/>
-      <description value="Example showing binary content"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
-        <valueCode value="application/xml"/>
-      </extension>
-      <reference>
-        <reference value="Binary/logical-example"/>
-      </reference>
-      <name value="Example of Logical Model"/>
-      <description value="Example showing example content for a logical model"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/MyLogical"/>
-    </resource>    
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
-        <valueCode value="image/jpeg"/>
-      </extension>
-      <reference>
-        <reference value="Binary/image-example"/>
-      </reference>
-      <name value="Example of Binary Image"/>
-      <description value="Example showing example content for an image"/>
+      <description value="Perfil de Paciente"/>
     </resource>    
     <resource>
       <reference>
-        <reference value="ValueSet/valueset-no-codesystem"/>
+        <reference value="Patient/exemplo"/>
       </reference>
-      <name value="Value set for no code system"/>
-    </resource>
-<!--    <resource>
-      <reference>
-        <reference value="Library/example"/>
-      </reference>
-      <name value="Simple library example"/>
-      <description value="A simple example showing how library is pre-loaded"/>
-    </resource> -->
+      <name value="Exemplo de paciente"/>
+    </resource>    
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
