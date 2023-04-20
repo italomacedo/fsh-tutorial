@@ -1,2 +1,8 @@
-# sample-ig
-A sample, template-driven implementation guide that provides a starting environment to use a base for defining new IGs
+- [Tutorial FHIR Shorthand](#tutorial-fhir-shorthand)
+
+# Tutorial FHIR Shorthand
+Um template de projeto de guia de implementação que trata de FHIR Workbooks, StructureDefinition e FHIR Shorthand.
+
+```
+docker-compose up --build
+```
